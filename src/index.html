@@ -5,18 +5,26 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Lista della spesa</title>
-    <link rel="stylesheet" href="/src/css/style.css"/>
+    <link rel="stylesheet" href="/src/css/style.css">
 </head>
 
 <body>
     <h1>Lista della spesa</h1>
     <div>
         <form id="addForm">
+            <select id="categorySelect">
+                <option value="" disabled selected>Seleziona categoria</option>
+                <option value="Frutta">Frutta</option>
+                <option value="Carne">Carne</option>
+                <option value="Pesce">Pesce</option>
+                <option value="Pane">Pane</option>
+            </select>
             <input id="itemInput" type="text" placeholder="Prodotto" autocomplete="off" />
             <input id="qtyInput" type="number" placeholder="Quantità" min="1" value="1" />
             <button type="submit">Aggiungi</button>
         </form>
 
+        <p id="counter">Totale elementi: 0</p>
         <ul id="list"></ul>
     </div>
 
