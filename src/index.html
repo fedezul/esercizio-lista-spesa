@@ -5,19 +5,22 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Lista della spesa</title>
+    <link rel="stylesheet" href="/src/css/style.css"/>
 </head>
 
 <body>
     <h1>Lista della spesa</h1>
     <div>
         <form id="addForm">
-            <input id="itemInput" type="text" placeholder="Aggiungi un prodotto" autocomplete="off" />
-            <button id="addBtn" type="submit">Aggiungi</button>
+            <input id="itemInput" type="text" placeholder="Prodotto" autocomplete="off" />
+            <input id="qtyInput" type="number" placeholder="Quantità" min="1" value="1" />
+            <button type="submit">Aggiungi</button>
         </form>
 
-        <ul id="list">
-        <script src="script.js"></script>
-        </ul>
+        <ul id="list"></ul>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
